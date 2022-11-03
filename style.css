@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-light: #FFF;
+    --color-dark: #000;
+    --color-background-light: #f5f5f5;
+    --color-background-dark: #181a1e;
+}
+
+/* DARK THEME COLOR */
+.dark-theme-variables {
+    --color-light: #000;
+    --color-dark: #FFF;
+    --color-background-light: #181a1e;
+    --color-background-dark: #f5f5f5;
+}
+
+body,
+th,
+option,
+label,
+button,
+td,
+td button {
+
+    font-family: poppins, sans-serif;
+    background-color: var(--color-background-light);
+    color: var(--color-dark) !important;
+    user-select: none;
+}
+
+.container {
+    background: var(--color-background-light);
+}
+
+td {
+    vertical-align: middle;
+}
+
+.theme {
+    display: flex;
+    width: 50px !important;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.theme button {
+    width: 25px;
+    height: auto;
+    padding: 0;
+    background: var(--color-light);
+}
+
+.theme button:first-child {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.theme button:last-child {
+    border: none;
+}
+
+.theme span {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.theme .active {
+    background: var(--color-dark);
+    color: var(--color-light) !important;
+}
